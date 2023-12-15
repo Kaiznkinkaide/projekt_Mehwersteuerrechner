@@ -5,24 +5,38 @@
 }
 
 body {
-    height: 100vh;
+    height: 50vh;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+h1 {
+    text-align: center;
 }
 
 span {
     color: red;
 }
 
+form {
+    border: 1px solid black;
+}
+
 .valueFrame {
-    border-radius: 10px;
-    width: 50vw;
+    border-radius: 5px;
+    width: 30vw;
     padding: 1vh;
     background-color: lightgray;
     display: flex;
     flex-direction: column;
     gap: 2vh;
+}
+
+.outputFrame {
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
+    border-left: 1px solid black;
 }
 
 #eingabe {
