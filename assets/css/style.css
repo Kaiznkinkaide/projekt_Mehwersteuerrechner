@@ -11,13 +11,21 @@ body {
     align-items: center;
 }
 
+span {
+    color: red;
+}
+
 .valueFrame {
+    border-radius: 10px;
+    width: 50vw;
+    padding: 1vh;
+    background-color: lightgray;
     display: flex;
     flex-direction: column;
     gap: 2vh;
 }
 
-#input {
+#eingabe {
     width: 7.5vw;
 }
 
