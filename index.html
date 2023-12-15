@@ -11,44 +11,45 @@
 <body>
     <div class="frame">
         <h1>Mehwersteuer-Rechner</h1>
-        <form action="" onsubmit="calc() ; return false">
-            <div class="radioFrame1" oninput="change()">
+        <form action="" onsubmit="calc(); return false">
+            <div class="radioFrame1" onchange="change()">
                 <h3>was soll berechnet werden?</h3>
                 <div>
-                    <input type="radio" name="radio1" id="radio1">
+                    <input type="radio" name="radio1" id="radio1" required>
                     <label for="radio1">Mehrwertsteuer aufschlagen (Netto zu Brutto)</label>
                 </div>
                 <div>
-                    <input type="radio" name="radio1" id="radio2">
+                    <input type="radio" name="radio1" id="radio2" required>
                     <label for="radio2">Mehrwertsteuer abziehen (Brutto zu Netto)</label>
                 </div>
             </div>
             <div class="radioFrame2">
                 <h3>Mehwersteuersatz</h3>
                 <div>
-                    <input type="radio" name="radio2" id="radio3">
+                    <input type="radio" name="radio2" id="radio3" required>
                     <label for="radio1">19%</label>
                 </div>
                 <div>
-                    <input type="radio" name="radio2" id="radio4">
+                    <input type="radio" name="radio2" id="radio4" required>
                     <label for="radio2">7%</label>
                 </div>
             </div>
             <div class="valueFrame">
-                <label for="input" id="nettoBrutto">Nettobetrag (Preis ohne Mehrwersteuer) in Euro<span>*</span></label>
-                <input type="number" name="num" id="input">
+                <label for="eingabe" id="nettoBrutto">Nettobetrag (Preis ohne Mehrwersteuer) in
+                    Euro<span>*</span></label>
+                <input type="number" name="num" id="eingabe">
                 <input type="submit" value="Berechnen">
             </div>
         </form>
         <h2>Ergebnis</h2>
+        <h3>Mehrwersteuerbetrag</h3>
         <div class="output1">
-            <h3>Mehrwersteuerbetrag</h3>
             <p id="output1-p"></p>
             <p>€</p>
 
         </div>
+        <h3 id="output2-h3">Bruttobetrag (Endpreis)</h3>
         <div class="output2">
-            <h3 id="output2-h3">Bruttobetrag (Endpreis)</h3>
             <p id="output2-p"></p>
             <p>€</p>
 

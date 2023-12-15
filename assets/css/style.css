@@ -1,0 +1,27 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.valueFrame {
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+}
+
+#input {
+    width: 7.5vw;
+}
+
+.output1,
+.output2 {
+    display: flex;
+}
