@@ -12,7 +12,7 @@
     <div class="frame">
         <h1>Mehwersteuer-Rechner</h1>
         <form action="" onsubmit="calc(); return false">
-            <div class="radioFrame1" onchange="change()">
+            <div class="radioFrame" onchange="change()">
                 <h3>was soll berechnet werden?</h3>
                 <div>
                     <input type="radio" name="radio1" id="radio1" required>
@@ -23,7 +23,7 @@
                     <label for="radio2">Mehrwertsteuer abziehen (Brutto zu Netto)</label>
                 </div>
             </div>
-            <div class="radioFrame2">
+            <div class="radioFrame">
                 <h3>Mehwersteuersatz</h3>
                 <div>
                     <input type="radio" name="radio2" id="radio3" required>
@@ -40,22 +40,26 @@
                 <input step="0.01" type="number" name="num" id="eingabe">
             </div>
             <input type="submit" value="Berechnen">
+            <div class="theFrame">
+                <h2>Ergebnis</h2>
+                <div class="outputFrame">
+                    <h4>Mehrwersteuerbetrag</h3>
+                        <div class="output1">
+                            <p id="output1-p"></p>
+                            <p>€</p>
+                        </div>
+                </div>
+                <div class="outputFrame">
+                    <h4 id="output2-h3">Bruttobetrag (Endpreis)</h3>
+                        <div class="output2">
+                            <p id="output2-p"></p>
+                            <p>€</p>
+                        </div>
+                </div>
+            </div>
+
         </form>
-        <div class="outputFrame">
-            <h2>Ergebnis</h2>
-            <h3>Mehrwersteuerbetrag</h3>
-            <div class="output1">
-                <p id="output1-p"></p>
-                <p>€</p>
-
-            </div>
-            <h3 id="output2-h3">Bruttobetrag (Endpreis)</h3>
-            <div class="output2">
-                <p id="output2-p"></p>
-                <p>€</p>
-            </div>
-
-        </div>
+    </div>
 
     </div>
 

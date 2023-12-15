@@ -5,7 +5,7 @@
 }
 
 body {
-    height: 50vh;
+    height: 70vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -20,11 +20,33 @@ span {
 }
 
 form {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-radius: 5px;
     border: 1px solid black;
+}
+
+.frame {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+}
+
+.radioFrame {
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    width: 30vw;
+    padding: 1vh;
+    background-color: lightgray;
 }
 
 .valueFrame {
     border-radius: 5px;
+    height: 90px;
     width: 30vw;
     padding: 1vh;
     background-color: lightgray;
@@ -33,17 +55,28 @@ form {
     gap: 2vh;
 }
 
-.outputFrame {
-    border-bottom: 1px solid black;
-    border-right: 1px solid black;
-    border-left: 1px solid black;
+
+.theFrame {
+    border-top: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
+
+.outputFrame {
+    height: 70px;
+    border-radius: 5px;
+    width: 30vw;
+    padding: 1vh;
+    background-color: lightgray;
+}
+
+
 
 #eingabe {
     width: 7.5vw;
 }
 
-.output1,
-.output2 {
+.output {
     display: flex;
 }
