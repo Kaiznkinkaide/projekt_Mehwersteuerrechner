@@ -4,8 +4,13 @@
     box-sizing: border-box;
 }
 
+@font-face {
+    font-family: "Monoton";
+    src: url("../font/Monoton/Monoton-Regular.ttf");
+}
+
 body {
-    height: 70vh;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -13,6 +18,9 @@ body {
 
 h1 {
     text-align: center;
+
+
+
 }
 
 span {
@@ -39,7 +47,6 @@ form {
     display: flex;
     flex-direction: column;
     border-radius: 5px;
-    width: 30vw;
     padding: 1vh;
     background-color: lightgray;
 }
@@ -47,7 +54,6 @@ form {
 .valueFrame {
     border-radius: 5px;
     height: 90px;
-    width: 30vw;
     padding: 1vh;
     background-color: lightgray;
     display: flex;
@@ -66,7 +72,6 @@ form {
 .outputFrame {
     height: 70px;
     border-radius: 5px;
-    width: 30vw;
     padding: 1vh;
     background-color: lightgray;
 }

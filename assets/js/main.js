@@ -35,7 +35,7 @@ let calc = () => {
         output2.innerHTML = plusMehrnNeunzehn.toFixed(2)
         
     } else if (radio2 && radio3){
-        output1.innerHTML = (input - minusMehrNeunzehn).toFixed(2)
+        output1.innerHTML = Math.abs((input - minusMehrNeunzehn).toFixed(2))
         output2.innerHTML = minusMehrNeunzehn.toFixed(2)
     } else if (radio1 && radio4){
         output1.innerHTML = Math.abs((input - plusMehrnSieben).toFixed(2))
